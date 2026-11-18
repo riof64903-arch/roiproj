@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <header>
+        <h2 class="logo">MyWebsite</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to My Website!</h1>
+            <p>Explore, Learn, Create and Enjoy.</p>
+
+            <button onclick="showMessage()">Get Started</button>
+            <button class="second-btn" onclick="changeColor()">Change Color</button>
+        </div>
+    </section>
+
+ 
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to my website! This website is created
+            to share information, explore new ideas, and
+            provide an enjoyable experience for everyone.
+        </p>
+    </section>
+
+  
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>🌐 Web Design</h3>
+                <p>Creating beautiful and modern websites.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>💻 Programming</h3>
+                <p>Learning and developing useful applications.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🎨 Creativity</h3>
+                <p>Turning creative ideas into reality.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Send us a message!</p>
+
+        <form id="contactForm">
+            <input type="text" id="name"
+                placeholder="Enter your name" required>
+
+            <input type="email" id="email"
+                placeholder="Enter your email" required>
+
+            <textarea id="message"
+                placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="response"></p>
+    </section>
+
+ 
+    <footer>
+        <p>© 2026 MyWebsite. All Rights Reserved.</p>
+        <button onclick="scrollToTop()">⬆ Back to Top</button>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
